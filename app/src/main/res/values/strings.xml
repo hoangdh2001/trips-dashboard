@@ -5,4 +5,8 @@
     <string name="to">to ?</string>
     <string name="where_are_you">Where are you</string>
     <string name="enter_your_destination">Enter your destination</string>
+    <string name="all">All</string>
+    <string name="upcoming_trips">Upcoming Trips</string>
+    <string name="_24_oct_09_40">24 Oct, 09:40</string>
+    <string name="las">LAS</string>
 </resources>
