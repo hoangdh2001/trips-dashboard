@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Trips Dashboard</string>
+    <string name="lufthansa">Lufthansa</string>
+    <string name="flying">Flying</string>
+    <string name="to">to ?</string>
+    <string name="where_are_you">Where are you</string>
+    <string name="enter_your_destination">Enter your destination</string>
 </resources>
