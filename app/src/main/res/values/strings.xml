@@ -17,4 +17,8 @@
     <string name="trips">Trips</string>
     <string name="profile">Profile</string>
     <string name="popular">Popular</string>
+    <string name="paris">Paris</string>
+    <string name="singapore">Singapore</string>
+    <string name="sydney">Sydney</string>
+    <string name="indonesia">Indonesia</string>
 </resources>
