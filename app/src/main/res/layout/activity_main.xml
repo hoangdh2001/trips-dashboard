@@ -208,8 +208,101 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/text_trip_date" />
 
+            <TextView
+                android:id="@+id/text_las_vegas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/las_vegas"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_las" />
+
+            <TextView
+                android:id="@+id/text_trip_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_11_10"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_sfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/_14ssp"
+                android:text="@string/sfo"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_trip_date" />
+
+            <TextView
+                android:id="@+id/text_san_francisco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/san_francisco"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_las" />
+            
+            <View
+                android:id="@+id/view_line"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="2dp"
+                android:background="@color/textHintColor"
+                app:layout_constraintBottom_toBottomOf="@id/text_sfo"
+                app:layout_constraintEnd_toStartOf="@id/text_sfo"
+                app:layout_constraintStart_toEndOf="@id/text_las"
+                app:layout_constraintTop_toTopOf="@id/text_las"/>
+
+            <ImageView
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:contentDescription="@string/app_name"
+                android:rotation="90"
+                android:src="@drawable/ic_airplane"
+                app:tint="@color/primaryTextColor"
+                app:layout_constraintBottom_toBottomOf="@id/view_line"
+                app:layout_constraintEnd_toEndOf="@id/view_line"
+                app:layout_constraintStart_toStartOf="@id/view_line"
+                app:layout_constraintTop_toTopOf="@id/view_line" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/text_popular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:text="@string/popular"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/card_upcoming_trips" />
+
+    <me.ibrahimsn.lib.SmoothBottomBar
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        app:backgroundColor="@color/backgroundColor"
+        app:iconSize="@dimen/_22sdp"
+        app:iconTint="@color/primaryTextColor"
+        app:iconTintActive="@color/whiteColor"
+        app:indicatorRadius="@dimen/_10sdp"
+        app:indicatorColor="@color/selectedMenuColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/menu_navigtaion"
+        app:textColor="@color/whiteColor"
+        app:textSize="@dimen/_12ssp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
