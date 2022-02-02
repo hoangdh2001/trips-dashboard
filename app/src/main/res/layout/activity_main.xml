@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/backgroundColor"
     tools:context=".MainActivity">
-    
+
     <ImageView
         android:id="@+id/image_header"
         android:layout_width="match_parent"
@@ -15,7 +15,7 @@
         android:scaleType="centerCrop"
         android:src="@drawable/plane_background"
         app:layout_constraintTop_toTopOf="parent" />
-    
+
     <ImageView
         android:id="@+id/image_airplane_outline"
         android:layout_width="@dimen/_20sdp"
@@ -26,10 +26,10 @@
         android:contentDescription="@string/app_name"
         android:padding="@dimen/_4sdp"
         android:src="@drawable/ic_airplane"
-        app:tint="@color/whiteColor"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-    
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/whiteColor" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -57,8 +57,8 @@
         android:textSize="@dimen/_24ssp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@id/image_header"
-        app:layout_constraintStart_toStartOf="parent"/>
-    
+        app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
         android:id="@+id/text_to"
         android:layout_width="wrap_content"
@@ -74,7 +74,7 @@
         app:layout_constraintBottom_toBottomOf="@id/text_flying"
         app:layout_constraintStart_toEndOf="@id/text_flying"
         app:layout_constraintTop_toTopOf="@id/text_flying" />
-    
+
     <TextView
         android:id="@+id/text_where_are_you"
         android:layout_width="wrap_content"
@@ -126,7 +126,7 @@
                 android:importantForAutofill="no"
                 android:inputType="text"
                 android:textColor="@color/primaryTextColor"
-                android:textSize="@dimen/_13ssp"/>
+                android:textSize="@dimen/_13ssp" />
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
@@ -139,9 +139,9 @@
         android:layout_marginEnd="@dimen/_15sdp"
         android:contentDescription="@string/app_name"
         android:src="@drawable/ic_keyboard_arrow_right"
-        app:tint="@color/primaryTextColor"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/card_search" />
+        app:layout_constraintTop_toBottomOf="@id/card_search"
+        app:tint="@color/primaryTextColor" />
 
     <TextView
         android:id="@+id/text_all"
@@ -201,9 +201,9 @@
                 android:id="@+id/text_las"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="@string/las"
                 android:textColor="@color/primaryTextColor"
                 android:textSize="@dimen/_14ssp"
-                android:text="@string/las"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/text_trip_date" />
@@ -232,9 +232,9 @@
                 android:id="@+id/text_sfo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="@string/sfo"
                 android:textColor="@color/primaryTextColor"
                 android:textSize="@dimen/_14ssp"
-                android:text="@string/sfo"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/text_trip_date" />
@@ -248,7 +248,7 @@
                 android:textSize="@dimen/_10ssp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/text_las" />
-            
+
             <View
                 android:id="@+id/view_line"
                 android:layout_width="@dimen/_80sdp"
@@ -257,7 +257,7 @@
                 app:layout_constraintBottom_toBottomOf="@id/text_sfo"
                 app:layout_constraintEnd_toStartOf="@id/text_sfo"
                 app:layout_constraintStart_toEndOf="@id/text_las"
-                app:layout_constraintTop_toTopOf="@id/text_las"/>
+                app:layout_constraintTop_toTopOf="@id/text_las" />
 
             <ImageView
                 android:layout_width="@dimen/_22sdp"
@@ -265,11 +265,11 @@
                 android:contentDescription="@string/app_name"
                 android:rotation="90"
                 android:src="@drawable/ic_airplane"
-                app:tint="@color/primaryTextColor"
                 app:layout_constraintBottom_toBottomOf="@id/view_line"
                 app:layout_constraintEnd_toEndOf="@id/view_line"
                 app:layout_constraintStart_toStartOf="@id/view_line"
-                app:layout_constraintTop_toTopOf="@id/view_line" />
+                app:layout_constraintTop_toTopOf="@id/view_line"
+                app:tint="@color/primaryTextColor" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -316,7 +316,7 @@
                     android:scaleType="centerCrop"
                     android:src="@drawable/paris"
                     app:riv_corner_radius="@dimen/_8sdp" />
-                
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -329,7 +329,7 @@
                     android:text="@string/paris"
                     android:textColor="@color/whiteColor"
                     android:textSize="@dimen/_13ssp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
             </FrameLayout>
 
             <FrameLayout
@@ -356,7 +356,7 @@
                     android:text="@string/singapore"
                     android:textColor="@color/whiteColor"
                     android:textSize="@dimen/_13ssp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
             </FrameLayout>
 
             <FrameLayout
@@ -383,7 +383,7 @@
                     android:text="@string/sydney"
                     android:textColor="@color/whiteColor"
                     android:textSize="@dimen/_13ssp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
             </FrameLayout>
 
             <FrameLayout
@@ -410,7 +410,7 @@
                     android:text="@string/indonesia"
                     android:textColor="@color/whiteColor"
                     android:textSize="@dimen/_13ssp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
             </FrameLayout>
 
         </LinearLayout>
@@ -427,10 +427,10 @@
         app:iconSize="@dimen/_22sdp"
         app:iconTint="@color/primaryTextColor"
         app:iconTintActive="@color/whiteColor"
-        app:indicatorRadius="@dimen/_10sdp"
         app:indicatorColor="@color/selectedMenuColor"
+        app:indicatorRadius="@dimen/_10sdp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:menu="@menu/menu_navigtaion"
+        app:menu="@menu/menu_navigation"
         app:textColor="@color/whiteColor"
         app:textSize="@dimen/_12ssp" />
 
